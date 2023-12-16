@@ -8,9 +8,16 @@
 }
 
 body{
+    width: 100%;
+    display: flex;
     min-height: 100vh;
     background-color: black;
-  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
 
 .header{
@@ -25,6 +32,7 @@ body{
     align-items: center;
     z-index: 100;
 }
+
 .logo{
     width: 150px;
     height:49px;
@@ -35,7 +43,6 @@ body{
     max-height: 100%;
     text-decoration: none;
 }
-
 
 .navbar a{
     font-size: 0.8rem;
@@ -74,13 +81,13 @@ a.login:hover{
     display: none;
 }
 
-@media(max-width:920px){
+@media(max-width:935px){
     .header{
         padding: 0.6rem 1rem; /*TB, LR*/    
     }
 }
 
-@media(max-width:888px){
+@media(max-width:903px){
     .more{
         display: inline-flex;
     }
@@ -108,4 +115,100 @@ a.login:hover{
         margin: 0.8rem 0;
     }
 
+}
+
+
+
+
+
+.carousel-box{
+    width: 100%;
+  
+}
+.carousel{
+    align-items: center;
+    display: flex;
+    height: 400px;
+    margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+    
+}
+.carousel-item{
+    height: 200px;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 330px;
+    z-index: 0;
+    border-radius: 15px;
+    background-size:contain;
+    
+}
+.carousel-item-1{
+    left: 20%;
+    opacity: .4;
+    transform: translateX(-125%);
+}
+
+.carousel-item-2,.carousel-item-6{
+    height: 250px;
+    opacity: .6;
+    width: 380px;
+    z-index: 1;
+   
+}
+.carousel-item-3,.carousel-item-5{
+    height: 300px;
+    opacity: .8;
+    width: 430px;
+    z-index: 2;
+   
+}
+.carousel-item-2{
+    left: 20%;
+    transform: translateX(-95%)
+}
+.carousel-item-3{
+   left: 20%;
+    transform: translateX(-70%)
+}
+.carousel-item-4{
+    box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.35);
+    height: 350px;
+    width: 490px;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+.carousel-item-5{
+    left:70%;
+    transform: translateX(-30%);
+}
+.carousel-item-6{
+    left:70%;
+    transform: translateX(-5%);
+}
+.carousel-item-7{
+    left: 70%;
+    opacity: .4;
+    transform: translateX(25%);
+}
+
+.gallery-control
+{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+    height: 100px;
+}
+.gallery-control button{
+    background-color:transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 0 50px;
+    padding: 0 12px;
+    text-transform: capitalize;
 }
