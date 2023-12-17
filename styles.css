@@ -120,17 +120,29 @@ a.login:hover{
 
 
 
-
+.title{
+    color: white;
+    font-size: 5rem;
+    font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Playfair Display', serif;
+}
 .carousel-box{
     width: 100%;
-  
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .carousel{
+   
     align-items: center;
     display: flex;
     height: 400px;
-    margin: 0 auto;
-    max-width: 1000px;
+    margin: 0;
     position: relative;
     
 }
@@ -146,9 +158,9 @@ a.login:hover{
     
 }
 .carousel-item-1{
-    left: 20%;
+    left: -15%;
     opacity: .4;
-    transform: translateX(-125%);
+    transform: translateX(-50%);
 }
 
 .carousel-item-2,.carousel-item-6{
@@ -166,12 +178,12 @@ a.login:hover{
    
 }
 .carousel-item-2{
-    left: 20%;
-    transform: translateX(-95%)
+    left: 0%;
+    transform: translateX(-50%)
 }
 .carousel-item-3{
    left: 20%;
-    transform: translateX(-70%)
+   transform: translateX(-50%)
 }
 .carousel-item-4{
     box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.35);
@@ -183,32 +195,28 @@ a.login:hover{
     z-index: 3;
 }
 .carousel-item-5{
-    left:70%;
-    transform: translateX(-30%);
+    left:80%;
+    transform: translateX(-50%);
 }
 .carousel-item-6{
-    left:70%;
-    transform: translateX(-5%);
+    left:100%;
+    transform: translateX(-50%);
 }
 .carousel-item-7{
-    left: 70%;
+    left: 115%;
     opacity: .4;
-    transform: translateX(25%);
+    transform: translateX(-50%);
 }
 
-.gallery-control
-{
-    display: flex;
-    justify-content: center;
-    margin: 25px 0;
-    height: 100px;
+.carousel-controls{
+    align-self: center;
 }
-.gallery-control button{
-    background-color:transparent;
-    border: 0;
+.carousel-control-previous,.carousel-control-next{
+    background-color: transparent;
+    color: white;
+    border:none;
+    font-size: 1.2rem;
+    padding: 5px;
+    margin:10px 40px;
     cursor: pointer;
-    font-size: 30px;
-    margin: 0 50px;
-    padding: 0 12px;
-    text-transform: capitalize;
 }
