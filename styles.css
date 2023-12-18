@@ -128,11 +128,13 @@ a.login:hover{
     overflow: hidden;
     text-overflow: ellipsis;
     font-family: 'Playfair Display', serif;
+
+    
 }
 .carousel-box{
     width: 100%;
     position: relative;
-    top: 30px;
+    top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -216,7 +218,14 @@ a.login:hover{
     color: white;
     border:none;
     font-size: 1.2rem;
-    padding: 5px;
+    
     margin:10px 40px;
     cursor: pointer;
+}
+.carousel-control-previous
+{
+    padding: 5px 15px;
+}
+.carousel-control-next{
+    padding: 5px 25px;
 }
