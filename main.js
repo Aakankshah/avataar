@@ -1,10 +1,19 @@
+
+
 document.addEventListener("DOMContentLoaded", function () {
-  const galleryContainer = document.querySelector(".carousel");
+  
   const prevBtn = document.getElementById("prevBtn");
   const nextBtn = document.getElementById("nextBtn");
 
   let currentIndex = 3;
   const totalImages = document.querySelectorAll(".carousel-item").length;
+
+  function startAutoPlay() {
+    autoPlayInterval = setInterval(function () {
+      currentIndex = (currentIndex + 1 + totalImages) % totalImages;
+      updateCarousel();
+    }, 5000);
+  }
 
   nextBtn.addEventListener("click", function () {
     currentIndex = (currentIndex + 1+ totalImages) % totalImages;
@@ -15,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
     currentIndex = (currentIndex - 1 + totalImages) % totalImages;
     updateCarousel();
   });
-
 
 
   function updateCarousel() {
@@ -96,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  
+  startAutoPlay();
   
   
 });
