@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", function () {
   
   const prevBtn = document.getElementById("prevBtn");
@@ -40,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   
     galleryItems.forEach((item, index) => {
+      
       if(index==currentIndex)
         {
         const newHeight = "350px";

@@ -1,0 +1,116 @@
+
+
+.carousel-box{
+    width: 100%;
+    position: relative;
+    top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.title{
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    align-self: center;
+}
+.carousel{
+   
+    align-items: center;
+    display: flex;
+    height: 400px;
+    width: 490px;
+    margin: 0;
+    position: relative;
+    
+}
+.carousel-item{
+    height: 200px;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 330px;
+    z-index: 0;
+    border-radius: 15px;
+    background-size:contain;
+    
+}
+.carousel-item-1{
+    left: -15%;
+    opacity: .4;
+    transform: translateX(-50%);
+}
+
+.carousel-item-2,.carousel-item-6{
+    height: 250px;
+    opacity: .6;
+    width: 380px;
+    z-index: 1;
+   
+}
+.carousel-item-3,.carousel-item-5{
+    height: 300px;
+    opacity: .8;
+    width: 430px;
+    z-index: 2;
+   
+}
+.carousel-item-2{
+    left: 0%;
+    transform: translateX(-50%)
+}
+.carousel-item-3{
+   left: 20%;
+   transform: translateX(-50%)
+}
+.carousel-item-4{
+    box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.35);
+    height: 350px;
+    width: 490px;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+.carousel-item-5{
+    left:80%;
+    transform: translateX(-50%);
+}
+.carousel-item-6{
+    left:100%;
+    transform: translateX(-50%);
+}
+.carousel-item-7{
+    left: 115%;
+    opacity: .4;
+    transform: translateX(-50%);
+}
+
+.carousel-controls{
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+.carousel-control-previous,.carousel-control-next{
+    background-color: transparent;
+    color: white;
+    border:none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.carousel-control-previous
+{
+    padding: 5px 15px;
+    margin-right: 40px;
+}
+.carousel-control-next{
+    padding: 5px 25px;
+    margin-left: 40px;
+}
