@@ -75,7 +75,7 @@ a.login{
     border-radius:25px;
     padding: 6px 10px;
     cursor: pointer;
-    transition: all .28s cubic-bezier(.25,.46,.45,.94);;
+    transition: all .28s cubic-bezier(.25,.46,.45,.94);
 }
 
 a:hover{
@@ -114,7 +114,7 @@ a:hover{
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
-   
+    cursor: pointer;
     display: flex;
     justify-content:space-around;
     align-items: center;
@@ -144,7 +144,8 @@ a:hover{
   
 
 .more-dropdown:hover .more-dropdown-content {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   
 
@@ -156,7 +157,7 @@ a:hover{
     }
 }
 
-@media(max-width:500px){
+@media(max-width:520px){
     .more{
         display: inline-flex;
     }
